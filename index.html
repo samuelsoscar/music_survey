@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We like to know your musical preferences</p>
+</header>
+  <div class="container">
+    <form id="survey-form">
+        <div class="form-group">
+        <label for="name" id="name-label" >Name: </label>
+        <input type="text" id="name" placeholder="Enter Name" required>
+        </div>
+        <div class="form-group">
+        <label for="email" id="email-label">Email: </label>
+        <input type="email" id="email"  placeholder="Enter Email" required>
+        </div>
+
+        <div class="form-group">
+        <label for="number" id="number-label">Age: </label>
+        <input type="number" id="number" min="13" max="120" placeholder="Age ">
+         </div>
+
+        <div class="form-group">
+        <p class="p-genre">Which genre you usually listen</p>
+
+        <select class="drop" id="dropdown">
+            <option disabled selected>Select genre</option>
+            <option value="Pop">Pop</option>
+            <option value="Rock">Rock</option>
+            <option value="Jaz">Jaz</option>
+            <option value="Blues">Blues</option>
+            <option value="Metal">Metal</option>
+            <option value="HipHop">Hip Hop</option>
+
+        </select>
+       </div>
+
+       <div class="form-group">
+        <label>Which place you ear music usually</label>
+        <label><input type="radio" name="group" value="Car"> Car</label>
+        <label><input type="radio" name="group" value="Home"> Home</label>
+        <label><input type="radio" name="group" value="Work"> Work</label>
+       </div>
+
+       <div class="form-group">
+        <label>Which platform do you use?</label>
+        <label><input type="checkbox" value="spotify"> Spotify</label>
+        <label><input type="checkbox"  value="applemusic"> Apple Music</label>
+        <label><input type="checkbox" value="youtube"> Youtube</label>
+        </div>
+
+        <div class="form-group">
+        <p id="description">Any suggestions?</p>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+        </div>
+
+        <div class="form-group">
+        <input type="submit" id="submit" value="Submit">
+        </div>
+    </form>
+ </div>
+</body>
+</html>
